@@ -1,7 +1,11 @@
 import "../styles/main.css";
 
-function Section() {
-  return <h1 className="section">SECTION</h1>;
+function Section({ children }) {
+  return (
+    <>
+      <div className="section">{children}</div>
+    </>
+  );
 }
 
 export { Section };
