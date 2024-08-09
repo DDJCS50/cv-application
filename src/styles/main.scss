@@ -1,20 +1,45 @@
 .section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 24px;
-  overflow: auto;
   height: 50px;
   width: auto;
   flex-direction: column;
-  overflow: auto;
+  flex: auto;
 }
 
 .mainContent {
   height: 80vh;
   width: 50vw;
   background-color: aquamarine;
+  display: flex;
+
+
+  .leftMain {
+    display: flex;
+    flex: 1;
+  }
+
+  .rightMain {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .topRightMain {
+      display: flex;
+      flex-direction: column;
+      border-bottom: solid 1px #E7D09D;
+
+      h2 {
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
 }
 
 body {

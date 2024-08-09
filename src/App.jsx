@@ -1,23 +1,10 @@
 import { useState } from "react";
-import { Page } from "./components/page";
-import { Section } from "./components/section";
+import { Page } from "./components/Page";
 
 function App() {
   return (
     <>
-      <form action="#" method="get">
-        <Page>
-          <Section>
-            <input type="text" />
-          </Section>
-          <Section>
-            <input type="email" />
-          </Section>
-          <Section>
-            <input type="number" />
-          </Section>
-        </Page>
-      </form>
+      <Page></Page>
     </>
   );
 }

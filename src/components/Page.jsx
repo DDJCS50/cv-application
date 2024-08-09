@@ -1,16 +1,17 @@
 import "../styles/main.css";
-import { Section } from "./section";
-import { Name } from "./name";
+import { Section } from "./Section";
+import { Name } from "./Name";
 import { useState } from "react";
+import { MainSection } from "./MainSection";
 
-function Page({ children }) {
-  const [edit, setEdit] = useState(true);
+function Page() {
+  const [edit, setEdit] = useState(false);
   return (
     <>
       <header>
         <Name currentlyEditing={edit}></Name>
       </header>
-      <main className="mainContent">{children}</main>
+      <MainSection></MainSection>
       <footer>
         <button
           onClick={() => {
