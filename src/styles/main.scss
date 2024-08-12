@@ -2,11 +2,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 24px;
-  height: 50px;
-  width: auto;
+  height: auto;
+  width: 100%;
   flex-direction: column;
-  flex: auto;
 }
 
 .mainContent {
@@ -25,11 +23,13 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 0px 8px;
 
     .topRightMain {
       display: flex;
       flex-direction: column;
       border-bottom: solid 1px #E7D09D;
+      width: 100%;
 
       h2 {
         margin-bottom: 0px;
@@ -37,6 +37,27 @@
 
       p {
         margin-top: 1rem;
+      }
+    }
+
+    .bottomRightMain {
+      .boiler {
+        padding: 8px 0px;
+      }
+
+      p {
+        margin: 0px;
+      }
+
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2px 0px;
+
+        p {
+          margin: 0px;
+        }
       }
     }
   }

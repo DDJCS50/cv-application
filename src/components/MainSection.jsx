@@ -2,11 +2,11 @@ import "../styles/main.css";
 import { LeftMain } from "./LeftMain";
 import { RightMain } from "./RightMain";
 
-function MainSection() {
+function MainSection({ mainEdit }) {
   return (
     <main className="mainContent">
-      <LeftMain></LeftMain>
-      <RightMain></RightMain>
+      <LeftMain leftEdit={mainEdit}></LeftMain>
+      <RightMain rightEdit={mainEdit}></RightMain>
     </main>
   );
 }

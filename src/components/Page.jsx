@@ -11,7 +11,7 @@ function Page() {
       <header>
         <Name currentlyEditing={edit}></Name>
       </header>
-      <MainSection></MainSection>
+      <MainSection mainEdit={edit}></MainSection>
       <footer>
         <button
           onClick={() => {
