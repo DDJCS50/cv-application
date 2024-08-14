@@ -61,4 +61,4 @@ function Boiler({ job, rightEdit }) {
   );
 }
 
-export { RightMain };
+export { RightMain, BasicInput };

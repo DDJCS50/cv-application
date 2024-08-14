@@ -8,20 +8,54 @@
 }
 
 .mainContent {
-  height: 80vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 80vh;
   width: 50vw;
-  background-color: aquamarine;
+  background-color: aliceblue;
   display: flex;
+  flex-wrap: wrap;
 }
 .mainContent .leftMain {
   display: flex;
   flex: 1;
+  flex-direction: column;
+  padding: 32px;
+}
+.mainContent .leftMain .section {
+  border-right: solid 1px #E7D09D;
+}
+.mainContent .leftMain .section .boiler h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.mainContent .leftMain .section .boiler h3 p {
+  display: flex;
+}
+.mainContent .leftMain .topLeftMain {
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .leftMain h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2px 0px;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-weight: 100;
+}
+.mainContent .leftMain p {
+  margin: 0px;
 }
 .mainContent .rightMain {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0px 8px;
+  padding: 32px;
+  width: 75%;
 }
 .mainContent .rightMain .topRightMain {
   display: flex;
@@ -35,6 +69,9 @@
 .mainContent .rightMain .topRightMain p {
   margin-top: 1rem;
 }
+.mainContent .rightMain .bottomRightMain {
+  width: 100%;
+}
 .mainContent .rightMain .bottomRightMain .boiler {
   padding: 8px 0px;
 }
@@ -43,9 +80,11 @@
 }
 .mainContent .rightMain .bottomRightMain h3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 2px 0px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 .mainContent .rightMain .bottomRightMain h3 p {
   margin: 0px;
