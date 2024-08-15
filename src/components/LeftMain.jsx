@@ -34,11 +34,11 @@ function LeftMain({ leftEdit }) {
       <Section>
         <h2>Education</h2>
         <h3>
-          <BasicInput editing={leftEdit} defaultItem={educationHolder.degree} descriptor={"Degree"} example={"B.S. Computer Science"}></BasicInput> &bull;{" "}
-          <BasicInput editing={leftEdit} defaultItem={educationHolder.date} descriptor={"Date Completed"} example={"10/10/2020"}></BasicInput>
+          <BasicInput editing={leftEdit} defaultItem={educationHolder.degree} descriptor={"Degree"} example={"B.S. Computer Science"}></BasicInput>{" "}
+          <BasicInput editing={leftEdit} defaultItem={educationHolder.date} descriptor={"Date Completed"} example={"December, 2020"}></BasicInput>
         </h3>
         <h3>
-          <BasicInput editing={leftEdit} defaultItem={educationHolder.universityName} descriptor={"University"} example={"University of Something"}></BasicInput>
+          <BasicInput editing={leftEdit} defaultItem={educationHolder.universityName} descriptor={"Place of Study"} example={"University of Something"}></BasicInput>
         </h3>
         <h3>
           <BasicInput editing={leftEdit} defaultItem={educationHolder.location} descriptor={"Location"} example={"Seattle, Washington"}></BasicInput>

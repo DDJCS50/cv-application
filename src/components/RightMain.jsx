@@ -38,8 +38,61 @@ function BasicInput({ editing, defaultItem, descriptor, example }) {
       </label>
     );
   } else if (value == "") {
-    return <p>{defaultItem}</p>;
+    if (descriptor == "Job Title") {
+      return (
+        <>
+          <p></p>
+        </>
+      );
+    } else if (descriptor == "Date Start") {
+      return (
+        <>
+          <p></p>
+        </>
+      );
+    } else if (descriptor == "Company") {
+      return (
+        <>
+          <p></p>
+        </>
+      );
+    } else if (descriptor == "Degree") {
+      return (
+        <>
+          <p></p>
+        </>
+      );
+    }
+    return <p></p>;
   } else {
+    if (descriptor == "Job Title") {
+      return (
+        <>
+          <p>{value}</p>
+          &bull;
+        </>
+      );
+    } else if (descriptor == "Date Start") {
+      return (
+        <>
+          <p>{value}</p>-
+        </>
+      );
+    } else if (descriptor == "Company") {
+      return (
+        <>
+          <p>{value}</p>
+          &bull;
+        </>
+      );
+    } else if (descriptor == "Degree") {
+      return (
+        <>
+          <p>{value}</p>
+          &bull;
+        </>
+      );
+    }
     return <p>{value}</p>;
   }
 }
@@ -48,12 +101,11 @@ function Boiler({ job, rightEdit }) {
   return (
     <div className="boiler">
       <h3>
-        <BasicInput editing={rightEdit} defaultItem={job.title} descriptor={"Job Title"} example={"Web Developer"}></BasicInput> &bull;{" "}
-        <BasicInput editing={rightEdit} defaultItem={job.dateBegin} descriptor={"Date Start"} example={"10/10/2020"}></BasicInput> -{" "}
-        <BasicInput editing={rightEdit} defaultItem={job.dateEnd} descriptor={"Date End"} example={"10/10/2020"}></BasicInput>
+        <BasicInput editing={rightEdit} defaultItem={job.title} descriptor={"Job Title"} example={"Web Developer"}></BasicInput>{" "}
+        <BasicInput editing={rightEdit} defaultItem={job.dateBegin} descriptor={"Date Start"} example={"10/10/2020"}></BasicInput> <BasicInput editing={rightEdit} defaultItem={job.dateEnd} descriptor={"Date End"} example={"10/10/2020"}></BasicInput>
       </h3>
       <h3>
-        <BasicInput editing={rightEdit} defaultItem={job.companyName} descriptor={"Company"} example={"Startup LLC"}></BasicInput> &bull;{" "}
+        <BasicInput editing={rightEdit} defaultItem={job.companyName} descriptor={"Company"} example={"Startup LLC"}></BasicInput>{" "}
         <BasicInput editing={rightEdit} defaultItem={job.location} descriptor={"Location"} example={"Seattle, Washington"}></BasicInput>
       </h3>
       <BasicInput editing={rightEdit} defaultItem={job.description} descriptor={"Duties"}></BasicInput>
